@@ -167,7 +167,7 @@ class GradlePlugin(PluginV1):
                 version=version, base=base, valid_versions=valid_versions
             )
 
-        self.stage_packages.append("openjdk-{}-jre-headless".format(version))
+        self.stage_packages.append("openjdk-{}-jre".format(version))
         self.build_packages.append("openjdk-{}-jdk-headless".format(version))
         self.build_packages.append("ca-certificates-java")
         self._java_version = version
